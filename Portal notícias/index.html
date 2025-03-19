@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Portal de notícias</title>
+        <link href="../css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class= "center">
+                <div class="about-header">
+                    <p>O Diário - News</p>
+                </div>
+                <div class="wrapper-header">
+                    <div class="header-content">
+                        <div class="logo">
+                            <h2><span></span>O Diário</h2></div>
+                        <div class="banner-ads">
+                            <h2><span style="font-size: 23px;">Caixa de anúncio</span><br/><em>Insira um anúncio aqui</em>        
+                        </div>
+            </div>
+        </header>
+        <!--FIM HEADER-->
+
+        <div class="center">
+            <div class="menu-main">
+                <a href="#">Home</a>
+                <a href="#">Notícias</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+
+        <section class="noticias-1">
+            <div class="center">
+                <div class="noticias-wraper-1">
+                    <div class="noticia-destaque">
+                        <div style="background-image: url(../images/Osaka-luto.png)" class="noticia-destaque-single">
+                            <h3>Garoto morto em acidente trágico</h3>
+                        </div>
+                    </div>
+                    <div class="outras-noticias-1">
+                        <div class="outra-noticia-1-single">
+                            <h3>Uma notícia</h3></div>
+                        <div class="outra-noticia-1-single">
+                            <h3>Uma notícia</h3></div>
+                        <div class="outra-noticia-1-single">
+                            <h3>Uma notícia</h3></div>
+                        <div class="outra-noticia-1-single">
+                            <h3>Uma notícia</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            let noticias = document.querySelector('.noticia-destaque');
+            
+            noticias.addEventListener('click', () => {
+                window.open("../pdf-post/Quarta Feira - O Diário.pdf", "_blank");
+            });
+        </script>
+    </body>
+</html>
